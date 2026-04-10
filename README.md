@@ -2,70 +2,69 @@
 
 ## 📌 Project Overview
 
-The **E-Banking System** is a backend application built using **Spring Boot** that provides REST APIs for managing banking operations such as account handling, transactions, and user management.
+The **E-Banking System** is a backend application developed using **Spring Boot** that provides REST APIs for handling banking operations such as account management and transactions.
 
-This project demonstrates core backend development concepts including RESTful API design, layered architecture, and database integration.
+This project showcases strong backend development skills including REST API design, layered architecture, and database integration.
 
 ---
 
 ## 🚀 Features
 
-* 👤 User account creation and management
-* 💰 Deposit and withdrawal operations
-* 🔄 Fund transfer between accounts
-* 📄 Transaction history tracking
-* 🔐 Secure and structured REST APIs
-* 🏗️ Layered architecture (Controller, Service, Repository)
+* 👤 Create and manage bank accounts
+* 💰 Deposit and withdraw money
+* 🔄 Transfer funds between accounts
+* 📄 View transaction history
+* 🏗️ Clean layered architecture (Controller, Service, Repository)
 
 ---
 
 ## 🛠️ Tech Stack
 
-* **Backend:** Java, Spring Boot
-* **Database:** MySQL
-* **Build Tool:** Maven
-* **API Testing:** Postman
-* **Architecture:** RESTful Web Services
+* **Java**
+* **Spring Boot**
+* **MySQL**
+* **Maven**
+* **Postman (API Testing)**
 
 ---
 
 ## 📂 Project Structure
 
-```
-ebanking-springboot/
-│── src/main/java/
-│   ├── controller/
-│   ├── service/
-│   ├── repository/
-│   ├── model/
-│
-│── src/main/resources/
-│   ├── application.properties
-│
-│── pom.xml
+```id="a1b2c3"
+src/
+ ├── main/
+ │   ├── java/
+ │   │   ├── controller/
+ │   │   ├── service/
+ │   │   ├── repository/
+ │   │   ├── model/
+ │   ├── resources/
+ │       ├── application.properties
+pom.xml
 ```
 
 ---
 
 ## ⚙️ Setup Instructions
 
-### 1️⃣ Clone the Repository
+### 1️⃣ Download the Project
 
-```
-git clone https://github.com/your-username/your-repo-name.git
-```
+* Click **Code → Download ZIP** from GitHub
+* Extract the ZIP file
 
-### 2️⃣ Navigate to Project
+---
 
-```
-cd your-repo-name
-```
+### 2️⃣ Open in IDE
+
+* Open the project in **Eclipse / IntelliJ / VS Code**
+
+---
 
 ### 3️⃣ Configure Database
 
 Update `application.properties`:
 
-```
+```id="d4e5f6"
 spring.datasource.url=jdbc:mysql://localhost:3306/your_db_name
 spring.datasource.username=your_username
 spring.datasource.password=your_password
@@ -75,13 +74,16 @@ spring.datasource.password=your_password
 
 ### 4️⃣ Run the Application
 
-```
+* Run the main Spring Boot class
+  **OR**
+
+```id="g7h8i9"
 mvn spring-boot:run
 ```
 
 ---
 
-## 📡 API Endpoints (Example)
+## 📡 API Endpoints
 
 | Method | Endpoint               | Description         |
 | ------ | ---------------------- | ------------------- |
@@ -95,31 +97,28 @@ mvn spring-boot:run
 
 ## 🧪 Testing
 
-* Use **Postman** to test APIs
-* Import endpoints and send JSON requests
+Use **Postman** to test the APIs by sending HTTP requests.
 
 ---
 
 ## 📈 Future Enhancements
 
-* 🔐 Add JWT Authentication & Authorization
-* 🌐 Build frontend using React/Angular
-* 📊 Add dashboard for analytics
-* ☁️ Deploy on AWS / Cloud
+* Add JWT Authentication 🔐
+* Build frontend (React / Angular) 🌐
+* Deploy on cloud (AWS) ☁️
 
 ---
 
 ## 👩‍💻 Author
 
 **Vandhana Thatikrindi**
-
-* Java Full Stack Developer
-* Skilled in Spring Boot, REST APIs, and Backend Development
+Aspiring Java Full Stack Developer
 
 ---
 
-## ⭐ Acknowledgement
+## ⭐ Note
 
-This project is developed as part of learning and showcasing backend development skills using Spring Boot.
+This project is created for learning and demonstrating backend development skills using Spring Boot.
 
 ---
+
