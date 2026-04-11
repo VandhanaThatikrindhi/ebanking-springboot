@@ -1,70 +1,93 @@
-# 💳 E-Banking System - Spring Boot REST API
+#  E-Banking System
 
-## 📌 Project Overview
+A backend banking application developed using **Spring Boot** that provides secure and scalable REST APIs for managing banking operations such as account handling, transactions, and fund transfers.
 
-The **E-Banking System** is a backend application developed using **Spring Boot** that provides REST APIs for handling banking operations such as account management and transactions.
-
-This project showcases strong backend development skills including REST API design, layered architecture, and database integration.
+The system is designed with a layered architecture to ensure clean code separation, maintainability, and real-world backend development practices.
 
 ---
 
-## 🚀 Features
+##  Key Features
 
-* 👤 Create and manage bank accounts
-* 💰 Deposit and withdraw money
-* 🔄 Transfer funds between accounts
-* 📄 View transaction history
-* 🏗️ Clean layered architecture (Controller, Service, Repository)
-
----
-
-## 🛠️ Tech Stack
-
-* **Java**
-* **Spring Boot**
-* **MySQL**
-* **Maven**
-* **Postman (API Testing)**
+* Account creation and management
+* Deposit and withdrawal operations
+* Fund transfer between accounts
+* Transaction history tracking
+* RESTful API design for seamless integration
+* Structured layered architecture (Controller, Service, Repository)
 
 ---
 
-## 📂 Project Structure
+##  Technologies Used
 
-```id="a1b2c3"
-src/
- ├── main/
- │   ├── java/
- │   │   ├── controller/
- │   │   ├── service/
- │   │   ├── repository/
- │   │   ├── model/
- │   ├── resources/
- │       ├── application.properties
-pom.xml
+### Backend
+
+* Java
+* Spring Boot
+* Spring MVC
+* Spring Data JPA
+* Hibernate
+* Maven
+
+### Database
+
+* MySQL
+
+### Tools
+
+* Git
+* Postman
+* REST APIs
+
+---
+
+##  Project Architecture
+
+The application follows a **layered architecture**:
+
+* **Controller Layer** handles incoming HTTP requests
+* **Service Layer** contains business logic
+* **Repository Layer** interacts with the database using JPA
+* **Entity/Model Layer** represents database tables
+* MySQL database stores account and transaction data
+
+This architecture ensures scalability, modularity, and clean separation of concerns.
+
+---
+
+##  Project Structure
+
+```id="p1s2t3"
+ebanking-springboot/
+│
+├── src/main/java/
+│   ├── controller/
+│   ├── service/
+│   ├── repository/
+│   ├── model/
+│
+├── src/main/resources/
+│   ├── application.properties
+│
+├── pom.xml
+└── README.md
 ```
 
 ---
 
-## ⚙️ Setup Instructions
+## ⚙️ How to Run the Project
 
-### 1️⃣ Download the Project
+### 1️⃣ Open Project
 
-* Click **Code → Download ZIP** from GitHub
 * Extract the ZIP file
+* Open in **Eclipse / IntelliJ / VS Code**
 
 ---
 
-### 2️⃣ Open in IDE
-
-* Open the project in **Eclipse / IntelliJ / VS Code**
-
----
-
-### 3️⃣ Configure Database
+### 2️⃣ Configure Database
 
 Update `application.properties`:
 
-```id="d4e5f6"
+```id="db123"
 spring.datasource.url=jdbc:mysql://localhost:3306/your_db_name
 spring.datasource.username=your_username
 spring.datasource.password=your_password
@@ -72,53 +95,62 @@ spring.datasource.password=your_password
 
 ---
 
-### 4️⃣ Run the Application
+### 3️⃣ Run Application
 
-* Run the main Spring Boot class
-  **OR**
-
-```id="g7h8i9"
+```id="run456"
 mvn spring-boot:run
 ```
 
----
-
-## 📡 API Endpoints
-
-| Method | Endpoint               | Description         |
-| ------ | ---------------------- | ------------------- |
-| POST   | /api/accounts          | Create account      |
-| GET    | /api/accounts/{id}     | Get account details |
-| POST   | /api/accounts/deposit  | Deposit money       |
-| POST   | /api/accounts/withdraw | Withdraw money      |
-| POST   | /api/accounts/transfer | Transfer funds      |
+OR run the main class directly from IDE.
 
 ---
 
-## 🧪 Testing
+## 📡 API Capabilities
 
-Use **Postman** to test the APIs by sending HTTP requests.
-
----
-
-## 📈 Future Enhancements
-
-* Add JWT Authentication 🔐
-* Build frontend (React / Angular) 🌐
-* Deploy on cloud (AWS) ☁️
+* Create and manage bank accounts
+* Perform deposit and withdrawal operations
+* Transfer funds between accounts
+* Retrieve account and transaction details
 
 ---
 
-## 👩‍💻 Author
+##  Testing
 
-**Vandhana Thatikrindi**
-Aspiring Java Full Stack Developer
-
----
-
-## ⭐ Note
-
-This project is created for learning and demonstrating backend development skills using Spring Boot.
+* APIs tested using **Postman**
+* Supports JSON-based request/response handling
 
 ---
 
+##  Use Cases
+
+* Digital banking systems
+* Financial transaction management
+* Backend API services for fintech applications
+
+---
+
+##  Future Enhancements
+
+* JWT-based authentication & authorization 
+* Frontend integration (React/Angular) 
+* Cloud deployment (AWS) 
+* Transaction security improvements
+
+---
+
+##  Author
+
+**Vandhana Thatikrindhi**
+B.Tech – Computer Science and Engineering
+
+---
+
+##  Internship
+
+This project was developed as part of a **Java Developer Internship**, focusing on real-world backend development using Spring Boot, REST APIs, and database integration.
+
+---
+
+## 📄 License
+
+This project is developed for learning and academic purposes.
