@@ -153,4 +153,4 @@ This project was developed as part of a **Java Developer Internship**, focusing 
 
 ## 📄 License
 
-This project is developed for learning and academic purposes.
+This project demonstrates practical implementation of backend development concepts, including RESTful APIs, layered architecture, and database management in a real-world scenario.
