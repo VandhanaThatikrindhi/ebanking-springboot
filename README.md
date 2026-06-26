@@ -1,72 +1,76 @@
-#  E-Banking System
+<div align="center">
+  <h1>E-Banking System</h1>
+  <p><strong>A Secure and Scalable Spring Boot REST API for Banking Operations</strong></p>
+  
+  [![Java: 17](https://img.shields.io/badge/Java-17-blue)](https://www.java.com/)
+  [![Spring Boot](https://img.shields.io/badge/Spring_Boot-3.x-brightgreen)](https://spring.io/projects/spring-boot)
+  [![MySQL](https://img.shields.io/badge/MySQL-Database-orange)](https://www.mysql.com/)
+  [![Maven](https://img.shields.io/badge/Maven-Build-red)](https://maven.apache.org/)
+</div>
 
-A backend banking application developed using **Spring Boot** that provides secure and scalable REST APIs for managing banking operations such as account handling, transactions, and fund transfers.
+<hr />
 
-The system is designed with a layered architecture to ensure clean code separation, maintainability, and real-world backend development practices.
+## Overview
+
+The **E-Banking System** is a backend application developed using Spring Boot. It provides secure and scalable REST APIs designed for managing fundamental banking operations such as account handling, transactions, and fund transfers. 
+
+Developed with a strict layered architecture, the system ensures clean code separation, robust maintainability, and adheres to real-world enterprise backend development practices.
 
 ---
 
-##  Key Features
+## Key Features
 
-* Account creation and management
-* Deposit and withdrawal operations
-* Fund transfer between accounts
-* Transaction history tracking
-* RESTful API design for seamless integration
-* Structured layered architecture (Controller, Service, Repository)
+- **Account Management**: Seamlessly create and manage bank accounts.
+- **Transactions**: Perform deposit and withdrawal operations.
+- **Fund Transfers**: Securely transfer funds between different accounts.
+- **Transaction History**: Maintain and retrieve detailed transaction tracking.
+- **RESTful API**: Clean API design for seamless integration with frontend systems.
+- **Layered Architecture**: Structured flow utilizing Controller, Service, and Repository layers.
 
 ---
 
-##  Technologies Used
+## Technologies Used
 
-### Backend
-
-* Java
-* Spring Boot
-* Spring MVC
-* Spring Data JPA
-* Hibernate
-* Maven
+### Backend Stack
+- **Java**: Core programming language.
+- **Spring Boot**: Framework for simplified enterprise Java development.
+- **Spring MVC**: For building web applications and REST APIs.
+- **Spring Data JPA & Hibernate**: For database interactions and Object-Relational Mapping (ORM).
+- **Maven**: Dependency management and build automation.
 
 ### Database
-
-* MySQL
+- **MySQL**: Relational database for storing user, account, and transaction data.
 
 ### Tools
-
-* Git
-* Postman
-* REST APIs
+- **Git**: Version control.
+- **Postman**: API testing and validation.
 
 ---
 
-##  Project Architecture
+## Project Architecture
 
-The application follows a **layered architecture**:
+The application is structured using a standard **layered architecture** to ensure scalability, modularity, and a clean separation of concerns:
 
-* **Controller Layer** handles incoming HTTP requests
-* **Service Layer** contains business logic
-* **Repository Layer** interacts with the database using JPA
-* **Entity/Model Layer** represents database tables
-* MySQL database stores account and transaction data
-
-This architecture ensures scalability, modularity, and clean separation of concerns.
+- **Controller Layer**: Handles incoming HTTP requests and routes them to the appropriate services.
+- **Service Layer**: Contains the core business logic and transaction management.
+- **Repository Layer**: Interacts directly with the MySQL database using JPA.
+- **Entity/Model Layer**: Represents the database schema and domain models.
 
 ---
 
-##  Project Structure
+## Project Structure
 
-```id="p1s2t3"
+```text
 ebanking-springboot/
 │
 ├── src/main/java/
 │   ├── controller/
 │   ├── service/
 │   ├── repository/
-│   ├── model/
+│   └── model/
 │
 ├── src/main/resources/
-│   ├── application.properties
+│   └── application.properties
 │
 ├── pom.xml
 └── README.md
@@ -74,83 +78,63 @@ ebanking-springboot/
 
 ---
 
-## ⚙️ How to Run the Project
+## Getting Started
 
-### 1️⃣ Open Project
+### 1. Open the Project
+Extract the project repository and open it in your preferred IDE (e.g., Eclipse, IntelliJ IDEA, or VS Code).
 
-* Extract the ZIP file
-* Open in **Eclipse / IntelliJ / VS Code**
+### 2. Configure the Database
+Create a MySQL database and update the `src/main/resources/application.properties` file with your credentials:
 
----
-
-### 2️⃣ Configure Database
-
-Update `application.properties`:
-
-```id="db123"
+```properties
 spring.datasource.url=jdbc:mysql://localhost:3306/your_db_name
 spring.datasource.username=your_username
 spring.datasource.password=your_password
 ```
 
----
+### 3. Run the Application
+Execute the following Maven command in the root directory to start the application:
 
-### 3️⃣ Run Application
-
-```id="run456"
+```bash
 mvn spring-boot:run
 ```
-
-OR run the main class directly from IDE.
-
----
-
-## 📡 API Capabilities
-
-* Create and manage bank accounts
-* Perform deposit and withdrawal operations
-* Transfer funds between accounts
-* Retrieve account and transaction details
+Alternatively, you can run the main application class directly from your IDE.
 
 ---
 
-##  Testing
+## API Capabilities
 
-* APIs tested using **Postman**
-* Supports JSON-based request/response handling
-
----
-
-##  Use Cases
-
-* Digital banking systems
-* Financial transaction management
-* Backend API services for fintech applications
+- Create and manage bank accounts.
+- Perform deposit and withdrawal operations.
+- Transfer funds between accounts.
+- Retrieve detailed account and transaction history.
 
 ---
 
-##  Future Enhancements
+## Testing & Validation
 
-* JWT-based authentication & authorization 
-* Frontend integration (React/Angular) 
-* Cloud deployment (AWS) 
-* Transaction security improvements
+All REST APIs have been thoroughly tested using **Postman** to ensure reliable JSON-based request and response handling across various scenarios.
 
 ---
 
-##  Author
+## Future Enhancements
 
-**Vandhana Thatikrindhi**
-B.Tech – Computer Science and Engineering
-
----
-
-##  Internship
-
-This project was developed as part of a **Java Developer Internship**, focusing on real-world backend development using Spring Boot, REST APIs, and database integration.
+- Implementation of JWT-based authentication and authorization.
+- Integration with a modern frontend framework (React or Angular).
+- Cloud deployment (AWS / Azure).
+- Advanced transaction security and fraud detection improvements.
 
 ---
 
-## 📄 License
+## Author & Context
 
-This project demonstrates practical implementation of backend development concepts, including RESTful APIs, layered architecture, and database management in a real-world scenario.
+**Vandhana Thatikrindhi**  
+*B.Tech – Computer Science and Engineering*
+
+This project was developed as part of a **Java Developer Internship**, focusing on real-world backend development utilizing Spring Boot, REST APIs, and database integration. It demonstrates the practical implementation of enterprise software engineering concepts in a financial context.
+
+---
+
+## License
+
+This project is intended for educational and demonstration purposes, showcasing the implementation of RESTful APIs, layered architecture, and database management.
